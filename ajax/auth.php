@@ -2,10 +2,9 @@
 
 
 $auyqrr = array("jsonrpc" => "2.0", "id"=> 0, "method" => "СБИС.Аутентифицировать", "params" => array("Параметр" => array("Логин" => "rita0607", "Пароль" =>  "11489serG")));
-
 $textfileind = json_encode($auyqrr);
 
-$urlrest = 'https://online.sbis.ru/auth/service/'; ///
+$urlrest = 'https://online.sbis.ru/auth/service/';
 
 $ch = curl_init();
 
@@ -24,5 +23,3 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $textfileind);
 $data = curl_exec($ch);
 curl_close($ch);
 $arrogot = json_decode($data, true);
-
-//print_r($arrogot);

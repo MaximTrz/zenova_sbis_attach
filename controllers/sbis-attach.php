@@ -12,6 +12,8 @@ if(isset($_GET['inc']) and $_GET['inc'] == 'index') {
     $page_java = 'modul/sbis-attach/view/sbis.js.tpl';
     $page_name = 'Отправка неформализованного документа'; ///для доступа
 
+    //include ("modul/sbis-attach/ajax/sbis.php");
+
 } else {
 
     include "view/dostup_disabled.tpl";
