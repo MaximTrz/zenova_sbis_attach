@@ -13,7 +13,7 @@ if (isset($_SESSION['user_login'])) {
     include ("../controllers/Sbis.php");
 
     $service = new SBISClient();
-    $service->auth("rita0607", "11489serG");
+    $service->auth("login", "pass");
 
     //$binaryData = file_get_contents('modul/sbis-attach/ajax/scan.pdf');
 
